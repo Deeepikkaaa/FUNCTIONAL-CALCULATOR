@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+    <form name="calc" class="display">
+        <br>
+        <div class="screen">
+            <input type="text" name="input" id="answer">
+        </div>
+        <div class="inputbtn">
+            <input type="button" class="num" value="7" onclick="calc.input.value +='7'">
+            <input type="button" class="num" value="8" onclick="calc.input.value +='8'">
+            <input type="button" class="num" value="9" onclick="calc.input.value +='9'">
+            <input type="button" class="operator" value="/" onclick="calc.input.value +='/'"><br>
+
+            <input type="button" class="num" value="4" onclick="calc.input.value +='4'">
+            <input type="button" class="num" value="5" onclick="calc.input.value +='5'">
+            <input type="button" class="num" value="6" onclick="calc.input.value +='6'">
+            <input type="button" class="operator" value="*" onclick="calc.input.value +='*'"><br>
+
+            <input type="button" class="num" value="1" onclick="calc.input.value +='1'">
+            <input type="button" class="num" value="2" onclick="calc.input.value +='2'">
+            <input type="button" class="num" value="3" onclick="calc.input.value +='3'">
+            <input type="button" class="operator" value="-" onclick="calc.input.value +='-'"><br>
+
+            <input type="button" class="num" value="0" onclick="calc.input.value +='0'">
+            <input type="button" class="operator" id="clear" value="AC" onclick="calc.input.value=''">
+            <input type="button" class="operator" value="=" onclick="calc.input.value=eval(calc.input.value)">
+            <input type="button" class="operator" value="+" onclick="calc.input.value+='+'"><br>
+        </div>
+    </form>
+</body>
+</html>
